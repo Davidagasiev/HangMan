@@ -84,7 +84,9 @@ class Hangman extends Component {
               this.state.nWrong
                 :
               7
-          )]} />
+          )]} alt="Your State" />
+
+          <p>Number of wrong guesses: {this.state.nWrong}</p>
 
           {
             this.state.nWrong >= 6 ? tryAgainBtn :  (
